@@ -44,9 +44,4 @@ node default {
   #   class { 'my_class': }
   include role::classroom
 }
-augeas {
-  context => "files/etc/hosts"
-  changes => [
-    "set <127.0.0.1> <testing.puppetlabs.vm>",
-  ],
-}
+
